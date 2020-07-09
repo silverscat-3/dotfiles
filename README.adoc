@@ -1,0 +1,12 @@
+= dotfiles
+
+
+🏠 Personal dotfiles for 🐧 Linux system.
+
+== Author
+
+銀猫さん <silverscat_3@mail.sc3.fun>
+
+== License
+
+Licensed under the DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE (link:./LICENES[LICENSE] or http://www.wtfpl.net/txt/copying/)
