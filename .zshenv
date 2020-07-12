@@ -1,0 +1,1 @@
+ZINIT_HOME
