@@ -1,3 +1,7 @@
+augroup MyAutoCmd
+autocmd!
+augroup END
+
 if has('nvim')
 	if &compatible
 		set nocompatible
@@ -18,4 +22,12 @@ function! s:source_rc(filename)
 endfunction
 
 call s:source_rc('plugins.rc.vim')
+
+set encoding=utf-8
+
+set number
+set wildmenu
+
+set ruler
+set cursorline
 
