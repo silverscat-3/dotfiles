@@ -6,5 +6,6 @@ function run {
 	fi
 }
 
+run picom -CGb --config ~/.config/picom/config
 run ibus-daemon -drx
 
