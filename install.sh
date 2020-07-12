@@ -9,7 +9,7 @@ echo
 
 if [ ! -d ~/dotfiles ];then
 	LC_ALL=C xdg-dirs-update
-	git clone -d 1 https://github.com/silverscat-3/dotfiles $HOME/dotfiles
+	git clone https://github.com/silverscat-3/dotfiles $HOME/dotfiles
 
 	cd $HOME/dotfiles && make deploy
 else
