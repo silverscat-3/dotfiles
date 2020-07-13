@@ -3,6 +3,7 @@
     "openedPathsList": {
         "workspaces3": [],
         "files2": [
+            "file:///home/kugo/.config/Code/TransportSecurity",
             "file:///home/kugo/.xsession-errors",
             "file:///home/kugo/dotfiles/.config/awesome/LICENSE",
             "file:///home/kugo/dotfiles/README.adoc",
@@ -16,38 +17,49 @@
                 "items": [
                     {
                         "id": "workbench.action.files.newUntitledFile",
-                        "label": "新規ファイル(&&N)"
+                        "label": "&&New File"
                     },
                     {
                         "id": "workbench.action.newWindow",
-                        "label": "新しいウィンドウ(&&W)"
+                        "label": "New &&Window"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "workbench.action.files.openFile",
-                        "label": "ファイルを開く(&&O)..."
+                        "label": "&&Open File..."
                     },
                     {
                         "id": "workbench.action.files.openFolder",
-                        "label": "フォルダーを開く(&&F)..."
+                        "label": "Open &&Folder..."
                     },
                     {
                         "id": "workbench.action.openWorkspace",
-                        "label": "ワークスペースを開く(&&K)..."
+                        "label": "Open Wor&&kspace..."
                     },
                     {
                         "id": "",
-                        "label": "最近使用した項目を開く(&&R)",
+                        "label": "Open &&Recent",
                         "submenu": {
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "閉じたエディターを再度開く(&&R)"
+                                    "label": "&&Reopen Closed Editor"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/kugo/.config/Code/TransportSecurity",
+                                        "path": "/home/kugo/.config/Code/TransportSecurity",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.config/Code/TransportSecurity"
                                 },
                                 {
                                     "id": "openRecentFile",
@@ -109,14 +121,14 @@
                                 },
                                 {
                                     "id": "workbench.action.openRecent",
-                                    "label": "その他(&&M)..."
+                                    "label": "&&More..."
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.clearRecentFiles",
-                                    "label": "最近使ったものをクリア(&&C)"
+                                    "label": "&&Clear Recently Opened"
                                 }
                             ]
                         }
@@ -126,27 +138,27 @@
                     },
                     {
                         "id": "addRootFolder",
-                        "label": "フォルダーをワークスペースに追加(&&D)..."
+                        "label": "A&&dd Folder to Workspace..."
                     },
                     {
                         "id": "workbench.action.saveWorkspaceAs",
-                        "label": "名前を付けてワークスペースを保存..."
+                        "label": "Save Workspace As..."
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "workbench.action.files.save",
-                        "label": "保存(&&S)"
+                        "label": "&&Save"
                     },
                     {
                         "id": "workbench.action.files.saveAs",
-                        "label": "名前を付けて保存(&&A)...",
+                        "label": "Save &&As...",
                         "enabled": false
                     },
                     {
                         "id": "workbench.action.files.saveAll",
-                        "label": "すべて保存(&&L)",
+                        "label": "Save A&&ll",
                         "enabled": false
                     },
                     {
@@ -154,53 +166,53 @@
                     },
                     {
                         "id": "workbench.action.toggleAutoSave",
-                        "label": "自動保存(&&U)"
+                        "label": "A&&uto Save"
                     },
                     {
                         "id": "",
-                        "label": "ユーザー設定(&&P)",
+                        "label": "&&Preferences",
                         "submenu": {
                             "items": [
                                 {
                                     "id": "workbench.action.openSettings",
-                                    "label": "設定(&&S)"
+                                    "label": "&&Settings"
                                 },
                                 {
                                     "id": "settings.filterByOnline",
-                                    "label": "オンライン サービスの設定(&&O)"
+                                    "label": "&&Online Services Settings"
                                 },
                                 {
                                     "id": "workbench.view.extensions",
-                                    "label": "拡張機能(&&E)"
+                                    "label": "&&Extensions"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.openGlobalKeybindings",
-                                    "label": "キーボード ショートカット"
+                                    "label": "Keyboard Shortcuts"
                                 },
                                 {
                                     "id": "workbench.extensions.action.showRecommendedKeymapExtensions",
-                                    "label": "キーマップ(&&K)"
+                                    "label": "&&Keymaps"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.openSnippets",
-                                    "label": "ユーザー スニペット(&&S)"
+                                    "label": "User &&Snippets"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.selectTheme",
-                                    "label": "配色テーマ(&&C)"
+                                    "label": "&&Color Theme"
                                 },
                                 {
                                     "id": "workbench.action.selectIconTheme",
-                                    "label": "ファイル アイコンのテーマ(&&I)"
+                                    "label": "File &&Icon Theme"
                                 }
                             ]
                         }
@@ -210,27 +222,27 @@
                     },
                     {
                         "id": "workbench.action.files.revert",
-                        "label": "ファイルを元に戻す(&&V)"
+                        "label": "Re&&vert File"
                     },
                     {
                         "id": "workbench.action.closeActiveEditor",
-                        "label": "エディターを閉じる(&&C)"
+                        "label": "&&Close Editor"
                     },
                     {
                         "id": "workbench.action.closeFolder",
-                        "label": "フォルダーを閉じる(&&F)",
+                        "label": "Close &&Folder",
                         "enabled": false
                     },
                     {
                         "id": "workbench.action.closeWindow",
-                        "label": "ウィンドウを閉じる(&&E)"
+                        "label": "Clos&&e Window"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "workbench.action.quit",
-                        "label": "終了(&&X)"
+                        "label": "E&&xit"
                     }
                 ]
             },
@@ -238,67 +250,67 @@
                 "items": [
                     {
                         "id": "undo",
-                        "label": "元に戻す(&&U)"
+                        "label": "&&Undo"
                     },
                     {
                         "id": "redo",
-                        "label": "やり直し(&&R)"
+                        "label": "&&Redo"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "editor.action.clipboardCutAction",
-                        "label": "切り取り(&&T)"
+                        "label": "Cu&&t"
                     },
                     {
                         "id": "editor.action.clipboardCopyAction",
-                        "label": "コピー(&&C)"
+                        "label": "&&Copy"
                     },
                     {
                         "id": "editor.action.clipboardPasteAction",
-                        "label": "貼り付け(&&P)"
+                        "label": "&&Paste"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "actions.find",
-                        "label": "検索(&&F)"
+                        "label": "&&Find"
                     },
                     {
                         "id": "editor.action.startFindReplaceAction",
-                        "label": "置換(&&R)"
+                        "label": "&&Replace"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "workbench.action.findInFiles",
-                        "label": "フォルダーを指定して検索(&&I)"
+                        "label": "Find &&in Files"
                     },
                     {
                         "id": "workbench.action.replaceInFiles",
-                        "label": "フォルダーを指定して置換(&&I)"
+                        "label": "Replace &&in Files"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "editor.action.commentLine",
-                        "label": "行コメントの切り替え(&&T)"
+                        "label": "&&Toggle Line Comment"
                     },
                     {
                         "id": "editor.action.blockComment",
-                        "label": "ブロック コメントの切り替え(&&B)"
+                        "label": "Toggle &&Block Comment"
                     },
                     {
                         "id": "editor.emmet.action.expandAbbreviation",
-                        "label": "Emmet: 省略記法を展開(&&X)"
+                        "label": "Emmet: E&&xpand Abbreviation"
                     },
                     {
                         "id": "workbench.action.showEmmetCommands",
-                        "label": "Emmet(&&M)..."
+                        "label": "E&&mmet..."
                     }
                 ]
             },
@@ -306,76 +318,76 @@
                 "items": [
                     {
                         "id": "editor.action.selectAll",
-                        "label": "すべて選択(&&S)"
+                        "label": "&&Select All"
                     },
                     {
                         "id": "editor.action.smartSelect.expand",
-                        "label": "選択範囲の展開(&&E)"
+                        "label": "&&Expand Selection"
                     },
                     {
                         "id": "editor.action.smartSelect.shrink",
-                        "label": "選択範囲の縮小(&&S)"
+                        "label": "&&Shrink Selection"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "editor.action.copyLinesUpAction",
-                        "label": "行を上へコピー(&&C)"
+                        "label": "&&Copy Line Up"
                     },
                     {
                         "id": "editor.action.copyLinesDownAction",
-                        "label": "行を下へコピー(&&P)"
+                        "label": "Co&&py Line Down"
                     },
                     {
                         "id": "editor.action.moveLinesUpAction",
-                        "label": "行を上へ移動(&&V)"
+                        "label": "Mo&&ve Line Up"
                     },
                     {
                         "id": "editor.action.moveLinesDownAction",
-                        "label": "行を下へ移動(&&L)"
+                        "label": "Move &&Line Down"
                     },
                     {
                         "id": "editor.action.duplicateSelection",
-                        "label": "選択範囲の複製(&&D)"
+                        "label": "&&Duplicate Selection"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "editor.action.insertCursorAbove",
-                        "label": "カーソルを上に挿入(&&A)"
+                        "label": "&&Add Cursor Above"
                     },
                     {
                         "id": "editor.action.insertCursorBelow",
-                        "label": "カーソルを下に挿入(&&D)"
+                        "label": "A&&dd Cursor Below"
                     },
                     {
                         "id": "editor.action.insertCursorAtEndOfEachLineSelected",
-                        "label": "カーソルを行末に挿入(&&U)"
+                        "label": "Add C&&ursors to Line Ends"
                     },
                     {
                         "id": "editor.action.addSelectionToNextFindMatch",
-                        "label": "次の出現個所を追加(&&N)"
+                        "label": "Add &&Next Occurrence"
                     },
                     {
                         "id": "editor.action.addSelectionToPreviousFindMatch",
-                        "label": "前の出現箇所を追加(&&R)"
+                        "label": "Add P&&revious Occurrence"
                     },
                     {
                         "id": "editor.action.selectHighlights",
-                        "label": "すべての出現箇所を選択(&&O)"
+                        "label": "Select All &&Occurrences"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "workbench.action.toggleMultiCursorModifier",
-                        "label": "マルチ カーソルを Ctrl+Click に切り替える"
+                        "label": "Switch to Ctrl+Click for Multi-Cursor"
                     },
                     {
                         "id": "editor.action.toggleColumnSelection",
-                        "label": "列の選択モード(&&S)"
+                        "label": "Column &&Selection Mode"
                     }
                 ]
             },
@@ -383,23 +395,23 @@
                 "items": [
                     {
                         "id": "workbench.action.showCommands",
-                        "label": "コマンド パレット(&&C)..."
+                        "label": "&&Command Palette..."
                     },
                     {
                         "id": "workbench.action.openView",
-                        "label": "ビューを開く(&&O)..."
+                        "label": "&&Open View..."
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "",
-                        "label": "外観(&&A)",
+                        "label": "&&Appearance",
                         "submenu": {
                             "items": [
                                 {
                                     "id": "workbench.action.toggleFullScreen",
-                                    "label": "全画面表示(&&F)"
+                                    "label": "&&Full Screen"
                                 },
                                 {
                                     "id": "workbench.action.toggleZenMode",
@@ -407,135 +419,134 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleCenteredLayout",
-                                    "label": "中央揃えレイアウト"
+                                    "label": "Centered Layout"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.toggleMenuBar",
-                                    "label": "メニュー バーを表示(&&B)",
+                                    "label": "Show Menu &&Bar",
                                     "checked": true
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarVisibility",
-                                    "label": "サイド バーを表示(&&S)"
+                                    "label": "Show &&Side Bar"
                                 },
                                 {
                                     "id": "workbench.action.toggleStatusbarVisibility",
-                                    "label": "ステータス バーを表示(&&T)",
+                                    "label": "Show S&&tatus Bar",
                                     "checked": true
                                 },
                                 {
                                     "id": "workbench.action.toggleActivityBarVisibility",
-                                    "label": "アクティビティ バーを表示する(&&A)",
+                                    "label": "Show &&Activity Bar",
                                     "checked": true
                                 },
                                 {
                                     "id": "workbench.action.toggleEditorVisibility",
-                                    "label": "エディター領域の表示(&&E)",
+                                    "label": "Show &&Editor Area",
                                     "checked": true
                                 },
                                 {
                                     "id": "workbench.action.togglePanel",
-                                    "label": "パネルを表示(&&P)",
-                                    "checked": true
+                                    "label": "Show &&Panel"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarPosition",
-                                    "label": "サイド バーを右へ移動(&&M)"
-                                },
-                                {
-                                    "id": "workbench.action.positionPanelRight",
-                                    "label": "パネルを右に移動"
+                                    "label": "&&Move Side Bar Right"
                                 },
                                 {
                                     "id": "workbench.action.positionPanelLeft",
-                                    "label": "パネルを左に移動"
+                                    "label": "Move Panel Left"
+                                },
+                                {
+                                    "id": "workbench.action.positionPanelRight",
+                                    "label": "Move Panel Right"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.zoomIn",
-                                    "label": "拡大(&&Z)"
+                                    "label": "&&Zoom In"
                                 },
                                 {
                                     "id": "workbench.action.zoomOut",
-                                    "label": "ズームアウト(&&Z)"
+                                    "label": "&&Zoom Out"
                                 },
                                 {
                                     "id": "workbench.action.zoomReset",
-                                    "label": "ズームのリセット(&&R)"
+                                    "label": "&&Reset Zoom"
                                 }
                             ]
                         }
                     },
                     {
                         "id": "",
-                        "label": "エディター レイアウト(&&L)",
+                        "label": "Editor &&Layout",
                         "submenu": {
                             "items": [
                                 {
                                     "id": "workbench.action.splitEditorUp",
-                                    "label": "分割 (上)(&&U)"
+                                    "label": "Split &&Up"
                                 },
                                 {
                                     "id": "workbench.action.splitEditorDown",
-                                    "label": "分割 (下)(&&D)"
+                                    "label": "Split &&Down"
                                 },
                                 {
                                     "id": "workbench.action.splitEditorLeft",
-                                    "label": "分割 (左)(&&L)"
+                                    "label": "Split &&Left"
                                 },
                                 {
                                     "id": "workbench.action.splitEditorRight",
-                                    "label": "分割 (右)(&&R)"
+                                    "label": "Split &&Right"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.editorLayoutSingle",
-                                    "label": "シングル(&&S)"
+                                    "label": "&&Single"
                                 },
                                 {
                                     "id": "workbench.action.editorLayoutTwoColumns",
-                                    "label": "2 列(&&T)"
+                                    "label": "&&Two Columns"
                                 },
                                 {
                                     "id": "workbench.action.editorLayoutThreeColumns",
-                                    "label": "3 列(&&H)"
+                                    "label": "T&&hree Columns"
                                 },
                                 {
                                     "id": "workbench.action.editorLayoutTwoRows",
-                                    "label": "2 行(&&W)"
+                                    "label": "T&&wo Rows"
                                 },
                                 {
                                     "id": "workbench.action.editorLayoutThreeRows",
-                                    "label": "3 行(&&R)"
+                                    "label": "Three &&Rows"
                                 },
                                 {
                                     "id": "workbench.action.editorLayoutTwoByTwoGrid",
-                                    "label": "グリッド (2x2)(&&G)"
+                                    "label": "&&Grid (2x2)"
                                 },
                                 {
                                     "id": "workbench.action.editorLayoutTwoRowsRight",
-                                    "label": "2 行右(&&O)"
+                                    "label": "Two R&&ows Right"
                                 },
                                 {
                                     "id": "workbench.action.editorLayoutTwoColumnsBottom",
-                                    "label": "2 列下(&&C)"
+                                    "label": "Two &&Columns Bottom"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.toggleEditorGroupLayout",
-                                    "label": "レイアウトの反転(&&L)"
+                                    "label": "Flip &&Layout"
                                 }
                             ]
                         }
@@ -545,68 +556,68 @@
                     },
                     {
                         "id": "workbench.view.explorer",
-                        "label": "エクスプローラー(&&E)"
+                        "label": "&&Explorer"
                     },
                     {
                         "id": "workbench.view.search",
-                        "label": "検索(&&S)"
+                        "label": "&&Search"
                     },
                     {
                         "id": "workbench.view.scm",
-                        "label": "SCM(&&C)"
+                        "label": "S&&CM"
                     },
                     {
                         "id": "workbench.view.debug",
-                        "label": "実行(&&R)"
+                        "label": "&&Run"
                     },
                     {
                         "id": "workbench.view.extensions",
-                        "label": "拡張機能(&&X)"
+                        "label": "E&&xtensions"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "workbench.action.output.toggleOutput",
-                        "label": "出力(&&O)"
+                        "label": "&&Output"
                     },
                     {
                         "id": "workbench.debug.action.toggleRepl",
-                        "label": "デバッグ コンソール(&&B)"
+                        "label": "De&&bug Console"
                     },
                     {
                         "id": "workbench.action.terminal.toggleTerminal",
-                        "label": "ターミナル(&&T)"
+                        "label": "&&Terminal"
                     },
                     {
                         "id": "workbench.actions.view.problems",
-                        "label": "問題(&&P)"
+                        "label": "&&Problems"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "editor.action.toggleWordWrap",
-                        "label": "[右端で折り返す] の設定/解除(&&W)"
+                        "label": "Toggle &&Word Wrap"
                     },
                     {
                         "id": "editor.action.toggleMinimap",
-                        "label": "ミニマップを表示する(&&M)",
+                        "label": "Show &&Minimap",
                         "checked": true
                     },
                     {
                         "id": "breadcrumbs.toggle",
-                        "label": "階層リンクの表示(&&B)",
+                        "label": "Show &&Breadcrumbs",
                         "checked": true
                     },
                     {
                         "id": "editor.action.toggleRenderWhitespace",
-                        "label": "空白を描画する(&&R)",
+                        "label": "&&Render Whitespace",
                         "checked": true
                     },
                     {
                         "id": "editor.action.toggleRenderControlCharacter",
-                        "label": "制御文字を表示する(&&C)"
+                        "label": "Render &&Control Characters"
                     }
                 ]
             },
@@ -614,97 +625,96 @@
                 "items": [
                     {
                         "id": "workbench.action.navigateBack",
-                        "label": "戻る(&&B)",
+                        "label": "&&Back",
                         "enabled": false
                     },
                     {
                         "id": "workbench.action.navigateForward",
-                        "label": "進む(&&F)",
+                        "label": "&&Forward",
                         "enabled": false
                     },
                     {
                         "id": "workbench.action.navigateToLastEditLocation",
-                        "label": "最後の編集場所(&&L)",
-                        "enabled": false
+                        "label": "&&Last Edit Location"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "",
-                        "label": "エディターの切り替え(&&E)",
+                        "label": "Switch &&Editor",
                         "submenu": {
                             "items": [
                                 {
                                     "id": "workbench.action.nextEditor",
-                                    "label": "次のエディター(&&N)"
+                                    "label": "&&Next Editor"
                                 },
                                 {
                                     "id": "workbench.action.previousEditor",
-                                    "label": "前のエディター(&&P)"
+                                    "label": "&&Previous Editor"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.openNextRecentlyUsedEditor",
-                                    "label": "次の使用されているエディター(&&N)"
+                                    "label": "&&Next Used Editor"
                                 },
                                 {
                                     "id": "workbench.action.openPreviousRecentlyUsedEditor",
-                                    "label": "以前に使用したエディター(&&P)"
+                                    "label": "&&Previous Used Editor"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.nextEditorInGroup",
-                                    "label": "グループ内の次のエディター(&&N)"
+                                    "label": "&&Next Editor in Group"
                                 },
                                 {
                                     "id": "workbench.action.previousEditorInGroup",
-                                    "label": "グループ内の以前のエディター(&&P)"
+                                    "label": "&&Previous Editor in Group"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.openNextRecentlyUsedEditorInGroup",
-                                    "label": "グループ内の次の使用されているエディター(&&N)"
+                                    "label": "&&Next Used Editor in Group"
                                 },
                                 {
                                     "id": "workbench.action.openPreviousRecentlyUsedEditorInGroup",
-                                    "label": "グループ内の前の使用されているエディター(&&P)"
+                                    "label": "&&Previous Used Editor in Group"
                                 }
                             ]
                         }
                     },
                     {
                         "id": "",
-                        "label": "グループの切り替え(&&G)",
+                        "label": "Switch &&Group",
                         "submenu": {
                             "items": [
                                 {
                                     "id": "workbench.action.focusFirstEditorGroup",
-                                    "label": "グループ 1(&&1)"
+                                    "label": "Group &&1"
                                 },
                                 {
                                     "id": "workbench.action.focusSecondEditorGroup",
-                                    "label": "グループ 2(&&2)"
+                                    "label": "Group &&2"
                                 },
                                 {
                                     "id": "workbench.action.focusThirdEditorGroup",
-                                    "label": "グループ 3(&&3)",
+                                    "label": "Group &&3",
                                     "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusFourthEditorGroup",
-                                    "label": "グループ 4(&&4)",
+                                    "label": "Group &&4",
                                     "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusFifthEditorGroup",
-                                    "label": "グループ 5(&&5)",
+                                    "label": "Group &&5",
                                     "enabled": false
                                 },
                                 {
@@ -712,12 +722,12 @@
                                 },
                                 {
                                     "id": "workbench.action.focusNextGroup",
-                                    "label": "次のグループ(&&N)",
+                                    "label": "&&Next Group",
                                     "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusPreviousGroup",
-                                    "label": "前のグループ(&&P)",
+                                    "label": "&&Previous Group",
                                     "enabled": false
                                 },
                                 {
@@ -725,22 +735,22 @@
                                 },
                                 {
                                     "id": "workbench.action.focusLeftGroup",
-                                    "label": "グループ (左)(&&L)",
+                                    "label": "Group &&Left",
                                     "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusRightGroup",
-                                    "label": "グループ (右)(&&R)",
+                                    "label": "Group &&Right",
                                     "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusAboveGroup",
-                                    "label": "グループ (上)(&&A)",
+                                    "label": "Group &&Above",
                                     "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusBelowGroup",
-                                    "label": "グループ (下)(&&B)",
+                                    "label": "Group &&Below",
                                     "enabled": false
                                 }
                             ]
@@ -751,71 +761,71 @@
                     },
                     {
                         "id": "workbench.action.quickOpen",
-                        "label": "ファイルに移動(&&F)..."
+                        "label": "Go to &&File..."
                     },
                     {
                         "id": "workbench.action.showAllSymbols",
-                        "label": "ワークスペース内のシンボルへ移動(&&W)..."
+                        "label": "Go to Symbol in &&Workspace..."
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "workbench.action.gotoSymbol",
-                        "label": "エディター内のシンボルへ移動(&&S)..."
+                        "label": "Go to &&Symbol in Editor..."
                     },
                     {
                         "id": "editor.action.revealDefinition",
-                        "label": "定義に移動(&&D)"
-                    },
-                    {
-                        "id": "editor.action.goToTypeDefinition",
-                        "label": "型定義に移動(&&T)"
+                        "label": "Go to &&Definition"
                     },
                     {
                         "id": "editor.action.revealDeclaration",
-                        "label": "宣言へ移動(&&D)"
+                        "label": "Go to &&Declaration"
+                    },
+                    {
+                        "id": "editor.action.goToTypeDefinition",
+                        "label": "Go to &&Type Definition"
                     },
                     {
                         "id": "editor.action.goToImplementation",
-                        "label": "実装箇所に移動(&&I)"
+                        "label": "Go to &&Implementations"
                     },
                     {
                         "id": "editor.action.goToReferences",
-                        "label": "参照へ移動(&&R)"
+                        "label": "Go to &&References"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "workbench.action.gotoLine",
-                        "label": "行/列に移動(&&L)..."
+                        "label": "Go to &&Line/Column..."
                     },
                     {
                         "id": "editor.action.jumpToBracket",
-                        "label": "ブラケットに移動(&&B)"
+                        "label": "Go to &&Bracket"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "editor.action.marker.nextInFiles",
-                        "label": "次の問題箇所(&&P)"
+                        "label": "Next &&Problem"
                     },
                     {
                         "id": "editor.action.marker.prevInFiles",
-                        "label": "前の問題箇所(&&P)"
+                        "label": "Previous &&Problem"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "editor.action.dirtydiff.next",
-                        "label": "次の変更箇所(&&C)"
+                        "label": "Next &&Change"
                     },
                     {
                         "id": "editor.action.dirtydiff.previous",
-                        "label": "前の変更箇所(&&C)"
+                        "label": "Previous &&Change"
                     }
                 ]
             },
@@ -823,20 +833,20 @@
                 "items": [
                     {
                         "id": "workbench.action.debug.start",
-                        "label": "デバッグの開始(&&S)"
+                        "label": "&&Start Debugging"
                     },
                     {
                         "id": "workbench.action.debug.run",
-                        "label": "デバッグなしで実行(&&W)"
+                        "label": "Run &&Without Debugging"
                     },
                     {
                         "id": "workbench.action.debug.stop",
-                        "label": "デバッグの停止(&&S)",
+                        "label": "&&Stop Debugging",
                         "enabled": false
                     },
                     {
                         "id": "workbench.action.debug.restart",
-                        "label": "デバッグの再起動(&&R)",
+                        "label": "&&Restart Debugging",
                         "enabled": false
                     },
                     {
@@ -844,33 +854,33 @@
                     },
                     {
                         "id": "workbench.action.debug.configure",
-                        "label": "構成を開く(&&C)"
+                        "label": "Open &&Configurations"
                     },
                     {
                         "id": "debug.addConfiguration",
-                        "label": "構成の追加(&&D)..."
+                        "label": "A&&dd Configuration..."
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "workbench.action.debug.stepOver",
-                        "label": "ステップ オーバーする(&&O)",
+                        "label": "Step &&Over",
                         "enabled": false
                     },
                     {
                         "id": "workbench.action.debug.stepInto",
-                        "label": "ステップ インする(&&I)",
+                        "label": "Step &&Into",
                         "enabled": false
                     },
                     {
                         "id": "workbench.action.debug.stepOut",
-                        "label": "ステップ アウトする(&&U)",
+                        "label": "Step O&&ut",
                         "enabled": false
                     },
                     {
                         "id": "workbench.action.debug.continue",
-                        "label": "続行(&&C)",
+                        "label": "&&Continue",
                         "enabled": false
                     },
                     {
@@ -878,28 +888,28 @@
                     },
                     {
                         "id": "editor.debug.action.toggleBreakpoint",
-                        "label": "ブレークポイントの切り替え(&&B)"
+                        "label": "Toggle &&Breakpoint"
                     },
                     {
                         "id": "",
-                        "label": "新しいブレークポイント(&&N)",
+                        "label": "&&New Breakpoint",
                         "submenu": {
                             "items": [
                                 {
                                     "id": "editor.debug.action.conditionalBreakpoint",
-                                    "label": "条件付きブレークポイント(&&C)..."
+                                    "label": "&&Conditional Breakpoint..."
                                 },
                                 {
                                     "id": "editor.debug.action.toggleInlineBreakpoint",
-                                    "label": "インライン ブレークポイント(&&O)"
+                                    "label": "Inline Breakp&&oint"
                                 },
                                 {
                                     "id": "workbench.debug.viewlet.action.addFunctionBreakpointAction",
-                                    "label": "関数のブレークポイント(&&F)..."
+                                    "label": "&&Function Breakpoint..."
                                 },
                                 {
                                     "id": "editor.debug.action.addLogPoint",
-                                    "label": "ログポイント(&&L)..."
+                                    "label": "&&Logpoint..."
                                 }
                             ]
                         }
@@ -909,22 +919,22 @@
                     },
                     {
                         "id": "workbench.debug.viewlet.action.enableAllBreakpoints",
-                        "label": "すべてのブレークポイントを有効にする(&&E)"
+                        "label": "&&Enable All Breakpoints"
                     },
                     {
                         "id": "workbench.debug.viewlet.action.disableAllBreakpoints",
-                        "label": "すべてのブレークポイントを無効にする(&&L)"
+                        "label": "Disable A&&ll Breakpoints"
                     },
                     {
                         "id": "workbench.debug.viewlet.action.removeAllBreakpoints",
-                        "label": "すべてのブレークポイントの削除(&&A)"
+                        "label": "Remove &&All Breakpoints"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "debug.installAdditionalDebuggers",
-                        "label": "その他のデバッガーをインストールします(&&I)..."
+                        "label": "&&Install Additional Debuggers..."
                     }
                 ]
             },
@@ -932,47 +942,48 @@
                 "items": [
                     {
                         "id": "workbench.action.terminal.new",
-                        "label": "新しいターミナル(&&N)"
+                        "label": "&&New Terminal"
                     },
                     {
                         "id": "workbench.action.terminal.split",
-                        "label": "ターミナルの分割(&&S)"
+                        "label": "&&Split Terminal",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "workbench.action.tasks.runTask",
-                        "label": "タスクの実行(&&R)..."
+                        "label": "&&Run Task..."
                     },
                     {
                         "id": "workbench.action.tasks.build",
-                        "label": "ビルド タスクの実行(&&B)..."
+                        "label": "Run &&Build Task..."
                     },
                     {
                         "id": "workbench.action.terminal.runActiveFile",
-                        "label": "アクティブなファイルの実行(&&A)"
+                        "label": "Run &&Active File"
                     },
                     {
                         "id": "workbench.action.terminal.runSelectedText",
-                        "label": "選択したテキストの実行(&&S)"
+                        "label": "Run &&Selected Text"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "workbench.action.tasks.showTasks",
-                        "label": "実行中のタスクを表示(&&G)...",
+                        "label": "Show Runnin&&g Tasks...",
                         "enabled": false
                     },
                     {
                         "id": "workbench.action.tasks.restartTask",
-                        "label": "タスクの実行を再開(&&E)...",
+                        "label": "R&&estart Running Task...",
                         "enabled": false
                     },
                     {
                         "id": "workbench.action.tasks.terminate",
-                        "label": "タスクの終了(&&T)...",
+                        "label": "&&Terminate Task...",
                         "enabled": false
                     },
                     {
@@ -980,11 +991,11 @@
                     },
                     {
                         "id": "workbench.action.tasks.configureTaskRunner",
-                        "label": "タスクの構成(&&C)..."
+                        "label": "&&Configure Tasks..."
                     },
                     {
                         "id": "workbench.action.tasks.configureDefaultBuildTask",
-                        "label": "既定のビルド タスクの構成(&&F)..."
+                        "label": "Configure De&&fault Build Task..."
                     }
                 ]
             },
@@ -992,78 +1003,78 @@
                 "items": [
                     {
                         "id": "workbench.action.showWelcomePage",
-                        "label": "ようこそ(&&W)"
+                        "label": "&&Welcome"
                     },
                     {
                         "id": "workbench.action.showInteractivePlayground",
-                        "label": "対話型プレイグラウンド(&&N)"
+                        "label": "I&&nteractive Playground"
                     },
                     {
                         "id": "workbench.action.openDocumentationUrl",
-                        "label": "参照資料(&&D)"
+                        "label": "&&Documentation"
                     },
                     {
                         "id": "update.showCurrentReleaseNotes",
-                        "label": "リリース ノート(&&R)"
+                        "label": "&&Release Notes"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "workbench.action.keybindingsReference",
-                        "label": "キーボード ショートカットの参照(&&K)"
+                        "label": "&&Keyboard Shortcuts Reference"
                     },
                     {
                         "id": "workbench.action.openIntroductoryVideosUrl",
-                        "label": "紹介ビデオ(&&V)"
+                        "label": "Introductory &&Videos"
                     },
                     {
                         "id": "workbench.action.openTipsAndTricksUrl",
-                        "label": "ヒントとトリビア(&&C)"
+                        "label": "Tips and Tri&&cks"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "workbench.action.openTwitterUrl",
-                        "label": "Twitter でフォローする(&&J)"
+                        "label": "&&Join Us on Twitter"
                     },
                     {
                         "id": "workbench.action.openRequestFeatureUrl",
-                        "label": "機能要求の検索(&&S)"
+                        "label": "&&Search Feature Requests"
                     },
                     {
                         "id": "workbench.action.openIssueReporter",
-                        "label": "問題を報告(&&I)"
+                        "label": "Report &&Issue"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "workbench.action.openLicenseUrl",
-                        "label": "ライセンスの表示(&&L)"
+                        "label": "View &&License"
                     },
                     {
                         "id": "workbench.action.openPrivacyStatementUrl",
-                        "label": "プライバシーに関する声明(&&Y)"
+                        "label": "Privac&&y Statement"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "workbench.action.toggleDevTools",
-                        "label": "開発者ツールの切り替え(&&T)"
+                        "label": "&&Toggle Developer Tools"
                     },
                     {
                         "id": "workbench.action.openProcessExplorer",
-                        "label": "プロセス エクスプローラーを開く(&&P)"
+                        "label": "Open &&Process Explorer"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "workbench.action.showAboutDialog",
-                        "label": "バージョン情報(&&A)"
+                        "label": "&&About"
                     }
                 ]
             }
@@ -1499,13 +1510,13 @@
     "themeBackground": "#161821",
     "windowsState": {
         "lastActiveWindow": {
-            "backupPath": "/home/kugo/.config/Code/Backups/1594563714198",
+            "backupPath": "/home/kugo/.config/Code/Backups/1594644152264",
             "uiState": {
                 "mode": 1,
-                "x": 1281,
-                "y": 43,
-                "width": 1278,
-                "height": 980
+                "x": 1295,
+                "y": 57,
+                "width": 617,
+                "height": 952
             }
         },
         "openedWindows": []

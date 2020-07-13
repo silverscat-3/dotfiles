@@ -1,8 +1,0 @@
-[2020-07-12 16:20:15.536] [sharedprocess] [info] main {"machineId":"85878265b6af92fccd68518ce78ef568e26f92e64bb3c16ddec20804089ef75e","windowId":2}
-[2020-07-12 16:20:55.557] [sharedprocess] [info] Starting to clean up unused language packs.
-[2020-07-12 16:20:57.091] [sharedprocess] [info] Installing extension: asciidoctor.asciidoctor-vscode
-[2020-07-12 16:20:57.897] [sharedprocess] [info] Downloaded extension: asciidoctor.asciidoctor-vscode /home/kugo/.config/Code/CachedExtensionVSIXs/asciidoctor.asciidoctor-vscode-2.8.1
-[2020-07-12 16:20:59.211] [sharedprocess] [info] Extracted extension to /home/kugo/.vscode/extensions/.asciidoctor.asciidoctor-vscode-2.8.1: asciidoctor.asciidoctor-vscode
-[2020-07-12 16:20:59.211] [sharedprocess] [info] Renamed to /home/kugo/.vscode/extensions/asciidoctor.asciidoctor-vscode-2.8.1
-[2020-07-12 16:20:59.213] [sharedprocess] [info] Installation completed. asciidoctor.asciidoctor-vscode
-[2020-07-12 16:20:59.293] [sharedprocess] [info] Extensions installed successfully: asciidoctor.asciidoctor-vscode
