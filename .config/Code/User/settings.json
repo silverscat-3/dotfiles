@@ -1,7 +1,0 @@
-{
-    "workbench.colorTheme": "Iceberg",
-    "vim.enableNeovim": true,
-    "vim.neovimPath": "/usr/bin/nvim",
-    "editor.fontFamily": "Noto Sans Mono CJK JP",
-    "terminal.integrated.fontFamily": "Noto Sans Mono CJK JP"
-}

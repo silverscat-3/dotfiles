@@ -1,5 +1,3 @@
-.config/Code/
+.config/Code/*
 !.config/Code/User/
-.config/Code/User/globalStorage
-.config/Code/User/workspaceStorage
 
