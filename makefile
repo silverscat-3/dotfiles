@@ -1,7 +1,11 @@
-deploy: zsh nvim xorg termite picom other
+deploy: bin zsh nvim xorg termite picom other
+
+bin: 
+	@ln -snvf $(HOME)/dotfiles/.bin ~/
+	@chmod -R u+x $(HOME)/dotfiles/.bin
 
 zsh:
-	@ln -svnf $(HOME)/.zsh* ~/
+	@ln -svnf $(HOME)/.z* ~/
 
 nvim:
 	@ln -svnf $(HOME)/dotfiles/.config/nvim/ ~/.config/
@@ -17,4 +21,4 @@ picom:
 
 other:
 	@ln -svnf $(HOME)/dotfiles/.env ~/
-
+	
