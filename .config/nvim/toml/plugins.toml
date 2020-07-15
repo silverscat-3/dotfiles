@@ -2,6 +2,21 @@
 repo = 'Shougo/dein.vim'
 
 [[plugins]]
+repo = 'fuenor/im_control.vim'
+hook_add = '''
+function! IMCtrl(cmd)
+    let cmd = a:cmd
+    if 'On' == cmd
+        let res = system('ibus engine "xkb:us::eng"')
+    elseif 'Off' == cmd
+        let res = system('ibus engine "skk"')
+    endif
+
+    return ''
+endfunction
+'''
+
+[[plugins]]
 repo = 'cocopon/iceberg.vim'
 hook_add = '''
 set termguicolors
