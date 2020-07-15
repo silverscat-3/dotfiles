@@ -7,11 +7,13 @@ fi
 source $ZPLUG_HOME/init.zsh
 
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
-zplug 'junegunn/fzf-bin', from:gh-r, as:command, rename-to:fzf
-zplug 'zdharma/fast-syntax-highlighting'
-zplug 'zsh-users/zsh-autosuggestions'
-zplug 'mafredri/zsh-async'
-zplug 'sindresorhus/pure'
+
+zplug 'junegunn/fzf-bin', from:gh-r, as:command, rename-to:fzf # いろいろ選べるすげーヤツ
+zplug 'zdharma/fast-syntax-highlighting', defer:2, lazy: true # シンタックスハイライトするヤツ
+zplug 'zsh-users/zsh-autosuggestions' # コマンド候補表示するヤツ
+
+zplug 'mafredri/zsh-async' # pureの依存パッケージ
+zplug 'sindresorhus/pure' # プロンプトのテーマ
 
 if ! zplug check --verbose; then
 	printf "Install [y/N]: "
@@ -21,3 +23,4 @@ if ! zplug check --verbose; then
 fi
 
 zplug load --verbose
+
