@@ -6,3 +6,5 @@ if [ -d $zshhome -a -r $zshhome -a -x $zshhome ]; then
 	done
 fi
 
+eval $(keychain --eval -Q --quiet ~/.ssh/id_ecdsa)
+
