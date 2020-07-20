@@ -8,6 +8,7 @@ function run {
 
 run picom -CGb --config ~/.config/picom/config
 run ibus-daemon -drx
+run thunar --daemon
 run yubioauth-desktop
 run discord
 run slack
