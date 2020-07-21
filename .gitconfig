@@ -1,3 +1,13 @@
 [user]
 	email = silverscat_3@mail.sc3.fun
-	name = silverscat_3
+	name = silverscat-3
+	signingkey = AF00B2FA40564C0DE8A1403A506A685A42D537EB
+[gpg]
+	program = /usr/bin/gpg
+[commit]
+	gpgsign = true
+
+[url "github:"]
+    pushInsteadOf = https://github.com/
+    pushInsteadOf = git@github.com:
+
