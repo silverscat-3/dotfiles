@@ -1,4 +1,4 @@
-deploy: bin zsh nvim xorg termite picom gtk other
+deploy: bin zsh nvim xorg libskk termite picom gtk other
 
 bin: 
 	@ln -snvf $(HOME)/dotfiles/.bin ~/
@@ -12,6 +12,9 @@ nvim:
 
 xorg:
 	@ln -svnf $(HOME)/dotfiles/.x* ~/
+
+libskk:
+	@ln -svnf $(HOME)/dotfiles/.config/libskk ~/.config/
 
 termite:
 	@ln -svnf $(HOME)/dotfiles/.config/termite ~/.config/
