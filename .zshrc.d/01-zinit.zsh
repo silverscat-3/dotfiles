@@ -16,7 +16,12 @@ autoload -Uz _zinit; (( ${+_comps} )) && _comps[zinit]=_zinit
 
 zinit ice from"gh-r" as"program"; zinit load junegunn/fzf-bin
 
-zinit ice wait"!0"; zinit load zdharma/fast-syntax-highlighting
-zinit ice wait"!0"; zinit load zsh-users/zsh-autosuggestions
+zinit for \
+	light-mode zsh-users/zsh-completions \
+	light-mode zsh-users/zsh-autosuggestions \
+	light-mode zdharma/fast-syntax-highlighting
+
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=blue,underline"
+
 zinit ice wait"!0"; zinit load sindresorhus/pure
 

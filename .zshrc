@@ -11,3 +11,4 @@ if [ $SHLVL = "3" ]; then
 	neofetch
 fi
 
+setopt auto_cd
