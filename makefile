@@ -19,6 +19,9 @@ libskk:
 termite:
 	@ln -svnf $(HOME)/dotfiles/.config/termite ~/.config/
 
+alacritty:
+	@ln -svnf $(HOME)/dotfiles/.config/alacritty ~/.config/
+
 picom:
 	@ln -svnf $(HOME)/dotfiles/.config/picom/ ~/.config/
 

@@ -1,6 +1,6 @@
 blur-background = true;
 blur-kern = "7x7box";
 
-opacity-rule = [ "90:class_g = 'Termite'" ];
+opacity-rule = [ "90:class_g = 'Alacritty'" ];
 shadow-exclude = [ "class_g = 'Firefox' && argb" ];
 
