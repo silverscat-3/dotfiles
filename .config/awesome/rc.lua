@@ -45,7 +45,7 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
-beautiful.init(awful.util.getdir("config") .. "/themes/iceberg-dark/theme.lua")
+beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "alacritty"
@@ -63,15 +63,15 @@ modkey = "Mod4"
 awful.layout.layouts = {
     awful.layout.suit.tile,
     awful.layout.suit.floating,
-    -- awful.layout.suit.tile.left,
-    -- awful.layout.suit.tile.bottom,
-    -- awful.layout.suit.tile.top,
+    awful.layout.suit.tile.left,
+    awful.layout.suit.tile.bottom,
+    awful.layout.suit.tile.top,
     -- awful.layout.suit.fair,
     -- awful.layout.suit.fair.horizontal,
     -- awful.layout.suit.spiral,
     -- awful.layout.suit.spiral.dwindle,
-    awful.layout.suit.max,
-    -- awful.layout.suit.max.fullscreen,
+    -- awful.layout.suit.max,
+    awful.layout.suit.max.fullscreen,
     -- awful.layout.suit.magnifier,
     -- awful.layout.suit.corner.nw,
     -- awful.layout.suit.corner.ne,
@@ -169,7 +169,7 @@ awful.screen.connect_for_each_screen(function(s)
     set_wallpaper(s)
 
     -- Each screen has its own tag table.
-    awful.tag({ "web", "edit", "file", "media", "other" }, s, awful.layout.layouts[2])
+    awful.tag({ "1", "2", "3", "4", "5", "6", "7", "8", "9" }, s, awful.layout.layouts[1])
 
     -- Create a promptbox for each screen
     s.mypromptbox = awful.widget.prompt()
@@ -210,7 +210,7 @@ awful.screen.connect_for_each_screen(function(s)
         s.mytasklist, -- Middle widget
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
-            -- mykeyboardlayout,
+            mykeyboardlayout,
             wibox.widget.systray(),
             mytextclock,
             s.mylayoutbox,
@@ -325,9 +325,8 @@ globalkeys = gears.table.join(
               end,
               {description = "lua execute prompt", group = "awesome"}),
     -- Menubar
-    awful.key({ modkey }, "p", function() awful.util.spawn("rofi -show run", true) end,
-              {description = "show the menubar", group = "launcher"}),
-    awful.key({ modkey, "Shift"   }, "l", function () awful.util.spawn("env XSECURELOCK_SAVER=saver_xscreensaver XSECURELOCK_PASSWORD_PROMPT=asterisks xsecurelock", false) end)
+    awful.key({ modkey }, "p", function() menubar.show() end,
+              {description = "show the menubar", group = "launcher"})
 )
 
 clientkeys = gears.table.join(
@@ -495,8 +494,8 @@ awful.rules.rules = {
     },
 
     -- Set Firefox to always map on the tag named "2" on screen 1.
-    { rule = { class = "vivaldi-stable" },
-        properties = { screen = 1, tag = "web" } },
+    -- { rule = { class = "Firefox" },
+    --   properties = { screen = 1, tag = "2" } },
 }
 -- }}}
 
@@ -560,6 +559,6 @@ client.connect_signal("mouse::enter", function(c)
     c:emit_signal("request::activate", "mouse_enter", {raise = false})
 end)
 
--- client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
+client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
