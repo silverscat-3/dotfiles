@@ -1,4 +1,4 @@
-deploy: bin zsh nvim xorg libskk termite picom gtk other
+deploy: bin zsh tmux fontconfig libskk nvim xorg termite picom gtk other
 
 bin: 
 	@ln -snvf $(HOME)/dotfiles/.bin ~/
@@ -6,6 +6,12 @@ bin:
 
 zsh:
 	@ln -svnf $(HOME)/dotfiles/.z* ~/
+
+tmux:
+	@ln -svnf $(HOME)/dotfiles/.tmux.d ~/
+
+fontconfig:
+	@ln -svnf $(HOME)/dotfiles/.config/fontconfig ~/.config/
 
 nvim:
 	@ln -svnf $(HOME)/dotfiles/.config/nvim/ ~/.config/
