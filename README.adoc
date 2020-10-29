@@ -1,6 +1,27 @@
 = dotfiles
+銀猫さん <silverscat_3@mail.sc3.fun>
 
 🏠 Personal dotfiles for 🐧 Linux system.
+
+== Requirements
+
+Shell::
+    zsh
+Terminal multiplexer::
+    tmux
+Terminal emuliter::
+    - Alacritty
+    - Termite
+Display manager::
+    XDM
+Window manager::
+    Awesome
+Text editor::
+    NeoVim
+Japanese input method::
+    uim-skk
+
+`make` and `git` are required to deploy dotfiles.
 
 == Author
 
