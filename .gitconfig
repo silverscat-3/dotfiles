@@ -1,7 +1,7 @@
 [user]
 	email = silverscat_3@mail.sc3.fun
-	name = silverscat-3
-	signingkey = AF00B2FA40564C0DE8A1403A506A685A42D537EB
+	name = 銀猫さん (silverscat_3)
+	signingkey = BAC452A4B60469A5 
 [gpg]
 	program = /usr/bin/gpg
 [commit]
